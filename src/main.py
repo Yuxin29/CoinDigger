@@ -69,16 +69,16 @@ class Coincollector:
     def draw_window(self):
         self.window.fill((0,0,0))
         
-        game_text = self.game_font.render("Coins: " + str(self.coins), True, (255, 0, 0))
+        game_text = self.game_font.render("Coins: " + str(self.coins), True, (255, 255, 255))
         self.window.blit(game_text, (25, self.height * self.scale + 10))
-        game_text = self.game_font.render("F2 = new game", True, (255, 0, 0))
+        game_text = self.game_font.render("F2 = new game", True, (255, 255, 255))
         self.window.blit(game_text, (200, self.height * self.scale + 10))
-        game_text = self.game_font.render("Esc = exit game", True, (255, 0, 0))
+        game_text = self.game_font.render("Esc = exit game", True, (255, 255, 255))
         self.window.blit(game_text, (400, self.height * self.scale + 10))
 
         if self.move_ret == "ulos":
             if self.all_coin_collected():
-                win_text = self.game_font2.render("You solved the game!", True, (255, 0, 0))
+                win_text = self.game_font2.render("You win the game!", True, (0, 255, 0))
                 win_text_x = self.scale * self.width / 2 - win_text.get_width() / 2
                 win_text_y = self.scale * self.height / 2 - win_text.get_height() / 2
                 pygame.draw.rect(self.window, (0, 0, 0), (win_text_x, win_text_y, win_text.get_width(), win_text.get_height()))
