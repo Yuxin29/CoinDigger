@@ -16,5 +16,5 @@ CoinCollector is a simple Pygame-based 2D game where you move a robot, collect c
 ## Installation
 #### 1. Clone the Module Directory
 ```
-git clone github.com/snowhp/CPP-Modules
+git clone https://github.com/Yuxin29/CoinCollector.git
 ```
